@@ -1,0 +1,20 @@
+﻿{"Format":
+{
+"FormatList": [
+{ "Name": "Windows 64bit hex value - Little Endian", "Value": "w64l" },
+{ "Name": "Windows 64bit hex value - Big Endian", "Value": "w64b" },
+{ "Name": "Windows Cookie Date (Lo Value, Hi Value)", "Value": "wcd" },
+{ "Name": "Windows Filetime [xxxxxxxx:xxxxxxxx]", "Value": "wf" },
+{ "Name": "Unix 32bit hex value - Little Endian", "Value": "u32l" },
+{ "Name": "Unix 32bit hex value - Big Endian", "Value": "u32b" },
+{ "Name": "Google Chrome Value", "Value": "gcv" },
+{ "Name": "Mac Absolute Time", "Value": "mat" },
+{ "Name": "MS-DOS 32bit Hex Value", "Value": "m32" },
+{ "Name": "MS-DOS wFatDate wFatTime", "Value": "mww" },
+{ "Name": "HFS 32bit hex value - Little Endian", "Value": "h32l" },
+{ "Name": "HFS 32bit hex value - Big Endia", "Value": "h32b" },
+{ "Name": "HFS+ 32bit hex value - Little Endian", "Value": "hp32l" },
+{ "Name": "HFS+ 32bit hex value - Big Endian", "Value": "hp32b" }
+]
+}
+}
