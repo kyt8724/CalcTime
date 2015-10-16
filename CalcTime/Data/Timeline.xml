@@ -1,174 +1,142 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Timeline>
-  <UTC>
-    <Name>UTC -12:00</Name>
-    <Symbol>-</Symbol>
-    <Value>12:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -11:00</Name>
-    <Symbol>-</Symbol>
-    <Value>11:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -10:00</Name>
-    <Symbol>-</Symbol>
-    <Value>10:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -09:00</Name>
-    <Symbol>-</Symbol>
-    <Value>09:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -08:00</Name>
-    <Symbol>-</Symbol>
-    <Value>08:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -07:00</Name>
-    <Symbol>-</Symbol>
-    <Value>07:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -06:00</Name>
-    <Symbol>-</Symbol>
-    <Value>06:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -05:00</Name>
-    <Symbol>-</Symbol>
-    <Value>05:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -04:00</Name>
-    <Symbol>-</Symbol>
-    <Value>04:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -03:30</Name>
-    <Symbol>-</Symbol>
-    <Value>03:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -03:00</Name>
-    <Symbol>-</Symbol>
-    <Value>03:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -02:00</Name>
-    <Symbol>-</Symbol>
-    <Value>02:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC -01:00</Name>
-    <Symbol>-</Symbol>
-    <Value>01:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC 00:00</Name>
-    <Symbol></Symbol>
-    <Value>00:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +01:00</Name>
-    <Symbol>+</Symbol>
-    <Value>01:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +02:00</Name>
-    <Symbol>+</Symbol>
-    <Value>02:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +03:00</Name>
-    <Symbol>+</Symbol>
-    <Value>03:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +03:30</Name>
-    <Symbol>+</Symbol>
-    <Value>+03:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +04:00</Name>
-    <Symbol>+</Symbol>
-    <Value>04:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +04:30</Name>
-    <Symbol>+</Symbol>
-    <Value>04:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +05:00</Name>
-    <Symbol>+</Symbol>
-    <Value>05:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +05:15</Name>
-    <Symbol>+</Symbol>
-    <Value>05:15</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +05:30</Name>
-    <Symbol>+</Symbol>
-    <Value>05:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +05:45</Name>
-    <Symbol>+</Symbol>
-    <Value>05:45</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +06:00</Name>
-    <Symbol>+</Symbol>
-    <Value>06:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +06:30</Name>
-    <Symbol>+</Symbol>
-    <Value>06:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +07:00</Name>
-    <Symbol>+</Symbol>
-    <Value>07:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +08:00</Name>
-    <Symbol>+</Symbol>
-    <Value>08:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +09:00</Name>
-    <Symbol>+</Symbol>
-    <Value>09:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +09:30</Name>
-    <Symbol>+</Symbol>
-    <Value>09:30</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +10:00</Name>
-    <Symbol>+</Symbol>
-    <Value>10:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +11:00</Name>
-    <Symbol>+</Symbol>
-    <Value>11:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +12:00</Name>
-    <Symbol>+</Symbol>
-    <Value>12:00</Value>
-  </UTC>
-  <UTC>
-    <Name>UTC +13:00</Name>
-    <Symbol>+</Symbol>
-    <Value>13:00</Value>
-  </UTC>
+  <UTCs>
+    <UTC>
+      <Name>UTC -12:00</Name>
+      <Value>-12:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -11:00</Name>
+      <Value>-11:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -10:00</Name>
+      <Value>-10:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -09:00</Name>
+      <Value>-09:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -08:00</Name>
+      <Value>-08:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -07:00</Name>
+      <Value>-07:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -06:00</Name>
+      <Value>-06:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -05:00</Name>
+      <Value>-05:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -04:00</Name>
+      <Value>-04:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -03:30</Name>
+      <Value>-03:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -03:00</Name>
+      <Value>-03:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -02:00</Name>
+      <Value>-02:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC -01:00</Name>
+      <Value>-01:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC 00:00</Name>
+      <Value>00:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +01:00</Name>
+      <Value>+01:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +02:00</Name>
+      <Value>+02:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +03:00</Name>
+      <Value>+03:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +03:30</Name>
+      <Value>+03:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +04:00</Name>
+      <Value>+04:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +04:30</Name>
+      <Value>+04:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +05:00</Name>
+      <Value>+05:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +05:15</Name>
+      <Value>+05:15</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +05:30</Name>
+      <Value>+05:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +05:45</Name>
+      <Value>+05:45</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +06:00</Name>
+      <Value>+06:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +06:30</Name>
+      <Value>+06:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +07:00</Name>
+      <Value>+07:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +08:00</Name>
+      <Value>+08:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +09:00</Name>
+      <Value>+09:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +09:30</Name>
+      <Value>+09:30</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +10:00</Name>
+      <Value>+10:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +11:00</Name>
+      <Value>+11:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +12:00</Name>
+      <Value>+12:00</Value>
+    </UTC>
+    <UTC>
+      <Name>UTC +13:00</Name>
+      <Value>+13:00</Value>
+    </UTC>
+  </UTCs>
 </Timeline>
