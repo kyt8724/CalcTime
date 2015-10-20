@@ -63,6 +63,9 @@
     </ApplicationDefinition>
     <Compile Include="Entity\Format.cs" />
     <Compile Include="Entity\Timeline.cs" />
+    <Compile Include="Entity\TimeValue.cs" />
+    <Compile Include="Utility\ConvertBytesTime.cs" />
+    <Compile Include="Utility\ConvertStringByte.cs" />
     <Compile Include="Utility\DeserializeXml.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

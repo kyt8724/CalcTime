@@ -13,10 +13,6 @@ namespace CalcTime
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string timeOperator { get; set; }
-        private string timelineValue { get; set; }
-        private string timeFormat { get; set; }
-
         public MainWindow()
         {
             InitializeComponent();
@@ -42,9 +38,8 @@ namespace CalcTime
             cbxFormat.SelectedValuePath = "Value";
 
             // initialize properties
-            cbxTimeline.SelectedValue = timelineValue = "+00:00";
-            cbxFormat.SelectedValue = timeFormat = "w64l";
-            timeOperator = "+";
+            cbxTimeline.SelectedValue = "+00:00";
+            cbxFormat.SelectedValue = "w64l";
         }
 
         private void LinkEvents()
@@ -65,17 +60,21 @@ namespace CalcTime
             
         }
 
-        private void CalculateTime()
+        private TimeValue CalculateTime()
         {
-            switch (timeFormat)
+
+            TimeValue timeValue = new TimeValue
             {
-                case "":
-                    ;
-                    break;
-                default:
-                    ;
-                    break;
-            }
+                ReturnTime = DateTime.Now,
+                TimeFormat = cbxFormat.SelectedValue.ToString(),
+                TimelineValue = cbxTimeline.SelectedValue.ToString(),
+                ConvertingTime = txtValue.Text,
+                IsInvalid = false
+            };
+
+            timeValue = ConvertBytesTime.CallConvertMethod(timeValue);
+
+            return timeValue;
         }
 
         #endregion custom method
@@ -88,7 +87,7 @@ namespace CalcTime
         {
             txtDateTime.Text = string.Empty;
             txtValue.Text = string.Empty;
-            cbxTimeline.SelectedValue = "00:00";
+            cbxTimeline.SelectedValue = "+00:00";
             cbxFormat.SelectedValue = "w64l";
         }
 
@@ -101,16 +100,23 @@ namespace CalcTime
         // decode button
         private void btnDecode_Click(object sender, RoutedEventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(txtValue.Text))
+            {
+                var timeValue = CalculateTime();
+                txtDateTime.Text = timeValue.ReturnTime.ToString();
+            }
         }
 
         // copy button
         private void btnCopy_Click(object sender, RoutedEventArgs e)
         {
             if (String.IsNullOrEmpty(txtDateTime.Text))
-                ;
+                return;
             else
+            {
+                txtDateTime.SelectAll();
                 txtDateTime.Copy();
+            }
         }
 
         // paste button
@@ -123,20 +129,13 @@ namespace CalcTime
         // format combobox
         private void cbxFormat_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cbxFormat.SelectedValue != null)
-                timeFormat = cbxFormat.SelectedValue.ToString();
+            
         }
 
         // timeline combox
         private void cbxTimeline_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            timeOperator = string.Empty;
-            timelineValue = string.Empty;
-            if (cbxTimeline.SelectedValue != null)
-            {
-                timeOperator = cbxTimeline.SelectedValue.ToString().Substring(0, 1);
-                timelineValue = cbxTimeline.SelectedValue.ToString().Substring(1);
-            }
+            
         }
 
         #endregion Events
