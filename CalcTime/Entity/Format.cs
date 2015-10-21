@@ -13,6 +13,7 @@ namespace CalcTime.Entity
         {
             public string Name { get; set; }
             public string Value { get; set; }
+            public string Example { get; set; }
         }
 
         public List<JsonData> FormatList { get; set; }

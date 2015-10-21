@@ -16,9 +16,10 @@ namespace CalcTime.Utility
         {
             try
             {
-                if (bytes.Length != 16)
+                if (bytes.Length != 8)
                     throw new ArgumentException();
-                return DateTime.FromFileTimeUtc(BitConverter.ToInt16(bytes, 0));
+                long timeV = BitConverter.ToInt64(bytes, 0);
+                return DateTime.FromFileTimeUtc(timeV);
             }
             catch (ArgumentException ex)
             {
@@ -128,13 +129,16 @@ namespace CalcTime.Utility
 
         public static TimeValue CallConvertMethod(TimeValue timeValue)
         {
-            var returnValue = timeValue.ReturnTime;
+            DateTime returnValue = timeValue.ReturnTime;
             isInvalid = timeValue.IsInvalid;
 
             switch (timeValue.TimeFormat)
             {
                 case "w64l":
                     returnValue = ConvertWindowsDate(ConvertStringByte.GetBytesLittle(timeValue.ConvertingTime));
+                    break;
+                case "w64o":
+                    returnValue = ConvertOLEDate(ConvertStringByte.GetBytesLittle(timeValue.ConvertingTime));
                     break;
                 case "w64b":
                     returnValue = ConvertWindowsDate(ConvertStringByte.GetBytes(timeValue.ConvertingTime));
@@ -179,13 +183,13 @@ namespace CalcTime.Utility
 
             if (timeValue.TimelineValue.Substring(0, 1) == "+")
             {
-                returnValue.AddHours(double.Parse(timeValue.TimelineValue.Substring(1, 2)));
-                returnValue.AddMinutes(double.Parse(timeValue.TimelineValue.Substring(4, 2)));
+                returnValue = returnValue.AddHours(double.Parse(timeValue.TimelineValue.Substring(1, 2)));
+                returnValue = returnValue.AddMinutes(double.Parse(timeValue.TimelineValue.Substring(4, 2)));
             }
             else
             {
-                returnValue.AddHours(-(double.Parse(timeValue.TimelineValue.Substring(1, 2))));
-                returnValue.AddMinutes(-(double.Parse(timeValue.TimelineValue.Substring(4, 2))));
+                returnValue = returnValue.AddHours(-(double.Parse(timeValue.TimelineValue.Substring(1, 2))));
+                returnValue = returnValue.AddMinutes(-(double.Parse(timeValue.TimelineValue.Substring(4, 2))));
             }
             timeValue.ReturnTime = returnValue;
             timeValue.IsInvalid = isInvalid;

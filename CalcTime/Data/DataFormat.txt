@@ -1,20 +1,21 @@
 ﻿{"Format":
 {
 "FormatList": [
-{ "Name": "Windows 64bit hex value - Little Endian", "Value": "w64l" },
-{ "Name": "Windows 64bit hex value - Big Endian", "Value": "w64b" },
-{ "Name": "Windows Cookie Date (Lo Value, Hi Value)", "Value": "wcd" },
-{ "Name": "Windows Filetime [xxxxxxxx:xxxxxxxx]", "Value": "wf" },
-{ "Name": "Unix 32bit hex value - Little Endian", "Value": "u32l" },
-{ "Name": "Unix 32bit hex value - Big Endian", "Value": "u32b" },
-{ "Name": "Google Chrome Value", "Value": "gcv" },
-{ "Name": "Mac Absolute Time", "Value": "mat" },
-{ "Name": "MS-DOS 32bit Hex Value", "Value": "m32" },
-{ "Name": "MS-DOS wFatDate wFatTime", "Value": "mww" },
-{ "Name": "HFS 32bit hex value - Little Endian", "Value": "h32l" },
-{ "Name": "HFS 32bit hex value - Big Endia", "Value": "h32b" },
-{ "Name": "HFS+ 32bit hex value - Little Endian", "Value": "hp32l" },
-{ "Name": "HFS+ 32bit hex value - Big Endian", "Value": "hp32b" }
+{ "Name": "Windows 64bit hex value - Little Endian", "Value": "w64l", "Example": "FF03D2315FE1C701" },
+{ "Name": "Windows 64bit hex value - Big Endian", "Value": "w64b", "Example": "01C7E15F31D203FF"  },
+{ "Name": "Windows 64bit OLE hex value", "Value": "w64o", "Example": "FBE8DF975D3FE340"  },
+{ "Name": "Windows Cookie Date (Lo Value, Hi Value)", "Value": "wcd", "Example": "1713586176,30212469"  },
+{ "Name": "Windows Filetime [xxxxxxxx:xxxxxxxx]", "Value": "wf", "Example": "CD4E55C3:01C7DD3E"  },
+{ "Name": "Unix 32bit hex value - Little Endian", "Value": "u32l", "Example": "00B4C346"  },
+{ "Name": "Unix 32bit hex value - Big Endian", "Value": "u32b", "Example": "46C3B400"  },
+{ "Name": "Google Chrome Value", "Value": "gcv", "Example": "12883423549317375"  },
+{ "Name": "Mac Absolute Time", "Value": "mat", "Example": "219216022"  },
+{ "Name": "MS-DOS 32bit Hex Value", "Value": "m32", "Example": "3561A436"  },
+{ "Name": "MS-DOS wFatDate wFatTime", "Value": "mww", "Example": "A4363561"  },
+{ "Name": "HFS 32bit hex value - Little Endian", "Value": "h32l", "Example": "CD4E55C3"  },
+{ "Name": "HFS 32bit hex value - Big Endia", "Value": "h32b", "Example": "C3554ECD"  },
+{ "Name": "HFS+ 32bit hex value - Little Endian", "Value": "hp32l", "Example": "CD4E55C3"  },
+{ "Name": "HFS+ 32bit hex value - Big Endian", "Value": "hp32b", "Example": "C3554ECD"  }
 ]
 }
 }
